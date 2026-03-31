@@ -16,9 +16,9 @@ ISA95_NAMESPACE = "https://isa.org/isa95"
 
 CNC_DATA = {
     "namespaces": [
-        {"uri": I3X_NAMESPACE, "displayName": "I3X"},
-        {"uri": ISA95_NAMESPACE, "displayName": "ISA95"},
-        {"uri": CNC_NAMESPACE, "displayName": "CESMII CNC Profile"},
+        {"uri": I3X_NAMESPACE, "displayName": "I3X","revision": "0001"},
+        {"uri": ISA95_NAMESPACE, "displayName": "ISA95","revision": "0001"},
+        {"uri": CNC_NAMESPACE, "displayName": "CESMII CNC Profile","revision": "0005"},
     ],
     "objectTypes": [
         # ISA-95 Work Center type for organizing CNC machines

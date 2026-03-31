@@ -3,10 +3,10 @@ from datetime import datetime
 # SIMPLIFIED I3X API compliant mock data - Industrial Information Interface eXchange (RFC 001)
 I3X_DATA = {
     "namespaces": [
-        {"uri": "https://cesmii.org/i3x", "displayName": "I3X"},
-        {"uri": "https://isa.org/isa95", "displayName": "ISA95"},
-        {"uri": "https://abelara.com/equipment", "displayName": "Abelara Equipment"},
-        {"uri": "https://thinkiq.com/equipment", "displayName": "ThinkIQ Equipment"}
+        {"uri": "https://cesmii.org/i3x", "displayName": "I3X", "revision": "2024-10-01T12:00:00Z"},
+        {"uri": "https://isa.org/isa95", "displayName": "ISA95", "revision": "2024-10-01T12:00:00Z"},
+        {"uri": "https://abelara.com/equipment", "displayName": "Abelara Equipment", "revision": "2024-10-01T12:00:00Z"},
+        {"uri": "https://thinkiq.com/equipment", "displayName": "ThinkIQ Equipment", "revision": "2024-10-01T12:00:00Z"}
     ],
     "objectTypes": [
         {

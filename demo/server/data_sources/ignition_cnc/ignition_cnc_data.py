@@ -39,15 +39,18 @@ IGNITION_CNC_DATA = {
     "namespaces": [
         {
             "uri": "http://opcfoundation.org/UA/",
-            "displayName": "OPC Foundation UA"
+            "displayName": "OPC Foundation UA",
+            "revision": "2024-10-01T12:00:00Z"
         },
         {
             "uri": "https://inductiveautomation.com/UDT",
-            "displayName": "Inductive Automation UDT"
+            "displayName": "Inductive Automation UDT",
+            "revision": "2024-10-01T12:00:00Z"
         },
         {
             "uri": "http://cesmii.net/profiles/CNC",
-            "displayName": "CESMII CNC Profile"
+            "displayName": "CESMII CNC Profile",
+            "revision": "2024-10-01T12:00:00Z"
         }
     ],
     "objectTypes": [

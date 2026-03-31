@@ -164,6 +164,7 @@ class MQTTDataSource(I3XDataSource):
                         "schema": self._get_json_schema(value)
                     }
                     self.logger.info(f"Discovered new namespace and type from payload: {namespace_uri} -> {type_id}")
+                    self.namespaceChanged(namespace_uri)
             else:
                 # No $namespace - use inferred type based on topic name
                 type_name = self._get_name_from_topic(msg.topic)
@@ -177,6 +178,7 @@ class MQTTDataSource(I3XDataSource):
                         "schema": self._get_json_schema(value)
                     }
                     self.logger.info(f"Created inferred type: {type_id}")
+                    self.namespaceChanged(self.MQTT_NAMESPACE_URI)
 
             # Update cache thread-safely
             with self.cache_lock:
